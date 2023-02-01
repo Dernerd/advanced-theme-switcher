@@ -1,0 +1,47 @@
+=== Advanced Theme Switcher ===
+Authors: Paul Menard (Incsub)
+
+* Fixed issue with cookies being set across the entire network on multisite subdirectory setups
+
+== Changelog ==
+= 1.0.9.4 =
+* Corrected reported issue where widgets where not properly being changed when switching themes.
+
+= 1.0.9.3 =
+* Corrected issue where get_query_var was causing fatal error with WPML installed. 
+
+= 1.0.9.2 =
+* Corrected reported issue where ADV_THEME_SWITCHER_TOOLBAR define was not accepting 'dropdown' value for 'display_type' parameter. 
+* Removed outer <ul></ul> wrapper when display_type set to menu or dropdown. Only used when display_type set to 'list'
+
+= 1.0.9.1 = 
+* Fixed reported issue where selected theme to preview on site front-end was effecting actual theme selection/change within Dashboard Appearance > Themes. 
+
+= 1.0.9 = 
+* Fixed reported issue of sorting themes when themes are set into sub-directories within the /wp-content/themes/ directory
+* Added better control for ClassicPress Toolbar menu Themes output via wp-config define variable 'ADV_THEME_SWITCHER_TOOLBAR'. See instructions.txt file in plugin folder for details. 
+* Added shortcode support [adv_theme_switcher] so you can display themes listing on pages instead of relying on widgets which are theme specific. See instructions.txt file in plugin folder for details and options. 
+* Added a second wp-config define option ADV_THEME_SWITCHER_DEFAULTS to control default values site-wide. 
+
+= 1.0.8.1 =
+* Fixed issue when hiding parent themes children themes were also being hidden. 
+
+= 1.0.8 =
+* Updated call to get_themes and get_active_theme to non-deprecated functions
+* Added some options to the widget: Hide Parent themes to show only child themes, Show theme version in output and group themes by parent child. 
+* Cleanup some of the processing logic and caching.
+* Verify worked on ClassicPress 3.5
+
+= 1.0.7 =
+* Fixed problem with rewrite rules. Actually removed rewrite logic. Added theme switcher to ClassicPress admin bar for logged in users;
+
+= 1.0.6 =
+* Fixed problem with multi words themes;
+
+= 1.0.5 =
+* Fixed rewrite rules;
+
+= 1.0.4 =
+* Compatibility update for ClassicPress 3.1
+* Internal architecture improved
+* Bug fixes

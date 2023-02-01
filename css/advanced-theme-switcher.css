@@ -1,0 +1,42 @@
+#wpadminbar #wp-admin-bar-advanced-theme-switcher-menu-sub a {
+    height: 1px;
+    line-height: 1px;
+}
+
+#wp-admin-bar-advanced-theme-switcher-menu li.current_theme a {
+	font-weight: bold;
+}
+
+#wpadminbar .advanced-theme-switcher-menu-sub select.advanced-theme-switcher-themes {
+	width: 100%;
+/*	color: #000000; */
+	text-shadow: none;
+	margin: 0;
+	padding: 0;
+}
+
+#wpadminbar .advanced-theme-switcher-menu-sub select.advanced-theme-switcher-themes option {
+/*	color: #000000; */
+	text-shadow: none;
+	line-height: 12px;	
+	margin: 0;
+	padding: 0;
+}
+
+select.advanced-theme-switcher-themes option.theme-child {
+	text-indent: 10px;
+	text-shadow:; none;
+}
+
+/*
+select.advanced-theme-switcher-themes optgroup option.theme-child {
+	text-indent: 0px;
+}
+*/
+select.advanced-theme-switcher-themes option.theme-child {
+	text-indent: 10px;
+}
+
+select.advanced-theme-switcher-themes option.theme-child-child {
+	text-indent: 15px;
+}
